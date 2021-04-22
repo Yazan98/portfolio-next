@@ -1,0 +1,53 @@
+.ProjectsComponent {
+  padding: 2em;
+  text-align: center;
+
+  .ProjectsContainer {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(28vw,.1fr));
+    grid-gap: 1em;
+
+    .ProjectPreviewComponent {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      padding: 5%;
+      transition: .5s;
+      text-align: start;
+
+      img {
+        border: 0 solid red;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 28vw;
+        object-fit: cover;
+        transition: .4s;
+      }
+
+      .Date {
+        font-size: small;
+      }
+    }
+  }
+
+  .Title {
+    text-align: start;
+
+    .Links {
+      display: flex;
+      label {
+        margin-right: 1em;
+        font-size: small;
+        cursor: pointer;
+      }
+
+      label:hover {
+        color: rgb(41, 98, 255);
+        transition-duration: 1s;
+      }
+    }
+  }
+}

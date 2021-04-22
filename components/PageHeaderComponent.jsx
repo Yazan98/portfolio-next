@@ -43,7 +43,7 @@ export default function PageHeaderComponent() {
           </div>
         </div>
         <div className="Image">
-          <Image src="/header.png" alt="Header Image" width="508" height="335" />
+          <Image loading="lazy" src="/header.png" alt="Header Image" width="508" height="335" />
         </div>
       </div>
     </ComponentLayout>

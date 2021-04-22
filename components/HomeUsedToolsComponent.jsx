@@ -14,7 +14,7 @@ export default function HomeUsedToolsComponent() {
         <div className="SkillsContent">
           <div className="Item">
             <h4>Android Development</h4>
-            <p>Firebase, Bintray, MVVM, Single Activity Apps, Jetpack Component, Room Database, ADB Terminal, Fragments, Custom Views, Multi Modular Apps</p>
+            <p>Firebase, Bintray, MVVM, Single Activity Apps, Jetpack Component, Room Database, ADB Terminal, Fragments, Custom Views, Multi Modular Apps, Google Play Console, Android Profiler, Leak Canary</p>
           </div>
           <div className="Item">
             <h4>Web Development</h4>

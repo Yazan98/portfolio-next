@@ -1,5 +1,6 @@
 import React from 'react';
 import ComponentLayout from './layouts/ComponentLayout';
+import BlueLineComponent from './BlueLineComponent';
 
 export default function FooterComponent() {
   return (
@@ -11,6 +12,7 @@ export default function FooterComponent() {
         </p>
         <p>Personal Website (CV , Portfolio) Created At 2021</p>
       </footer>
+      <BlueLineComponent />
     </ComponentLayout>
   );
 }
