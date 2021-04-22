@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalPagesComponent from '../components/PersonalPagesComponent';
+import PersonalPagesComponent from '../components/layouts/PersonalPagesComponent';
 
 export default function ProjectsComponent() {
   return (

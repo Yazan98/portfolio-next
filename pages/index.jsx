@@ -1,10 +1,11 @@
 import React from 'react';
-import PersonalPagesComponent from '../components/PersonalPagesComponent';
+import PersonalPagesComponent from '../components/layouts/PersonalPagesComponent';
+import PageHeaderComponent from '../components/PageHeaderComponent';
 
 export default function Home() {
   return (
     <PersonalPagesComponent>
-      <h1>Main Page</h1>
+      <PageHeaderComponent />
     </PersonalPagesComponent>
   );
 }

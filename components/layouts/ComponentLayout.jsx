@@ -1,11 +1,9 @@
 import React from 'react';
 import PortfolioContainer from './PortfolioContainer';
-import ToolbarComponent from './ToolbarComponent';
 
-export default function PersonalPagesComponent({ children }) {
+export default function ComponentLayout({ children }) {
   return (
     <PortfolioContainer>
-      <ToolbarComponent />
       {children}
     </PortfolioContainer>
   );
