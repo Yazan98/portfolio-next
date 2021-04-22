@@ -1,10 +1,10 @@
 import React from 'react';
 import PersonalPagesComponent from '../components/PersonalPagesComponent';
 
-export default function Home() {
+export default function ProjectsComponent() {
   return (
     <PersonalPagesComponent>
-      <h1>Main Page</h1>
+      <h1>Propjects Page</h1>
     </PersonalPagesComponent>
   );
 }

@@ -14,3 +14,38 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.Toolbar_Container .Content {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+  place-items: center center;
+  margin: 0;
+}
+
+.Toolbar_Container .Content h3 {
+  color: rgb(41, 98, 255);
+  font-family: 'Caveat', cursive;
+  font-size: x-large;
+  margin: 0;
+  padding: 0;
+}
+
+.Toolbar_Container .Content .Links {
+  display: flex;
+}
+
+.Toolbar_Container .Content .Links > a {
+  margin-right: 1em;
+}
+
+.active {
+  color: rgb(41, 98, 255);
+}
+
+a:hover {
+  color: rgb(41, 98, 255);
+  transition-duration: 0.5s;
+}
