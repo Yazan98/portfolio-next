@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import '../styles/skills_view.css';
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types

@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  font-size: 16px;
+  line-height: 1.56;
+  color: #252525;
 }
 
 @tailwind base;
@@ -26,6 +30,11 @@ a, p, h1, h2, h3, h4, h5, label {
 
 ul {
   list-style: none;
+}
+
+section {
+  padding: 40px 0;
+  border-top: 1px solid #e3e3e3;
 }
 
 * , *:after, *:before {
