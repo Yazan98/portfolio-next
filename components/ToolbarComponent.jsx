@@ -6,6 +6,7 @@ export default function ToolbarComponent() {
   const router = useRouter();
   return (
     <div className="Toolbar_Container">
+      <BlueLineComponent />
       <div className="Content">
         <h3 className>Yazan Tarifi</h3>
         <div className="Links">
@@ -16,7 +17,6 @@ export default function ToolbarComponent() {
           <a href="/archive" className={router.pathname === '/archive' ? 'active' : 'Link'}>Archive</a>
         </div>
       </div>
-      <BlueLineComponent />
     </div>
   );
 }
