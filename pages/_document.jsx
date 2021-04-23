@@ -1,6 +1,7 @@
 import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
+import React from 'react';
 
 class PortfolioDocument extends Document {
   static async getInitialProps(ctx) {
@@ -12,6 +13,7 @@ class PortfolioDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>Yazan Tarifi - Portfolio</title>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" />
           <meta name="description" content="Personal Website Created to Show My Projects" />

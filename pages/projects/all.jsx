@@ -66,9 +66,8 @@ export default function AllProjectsComponent() {
           </form>
         </div>
         <div className="ProjectsContainer">
-          {projects.map((item, index) => (
+          {projects.map((item) => (
             <ProjectCardComponent
-              key={index}
               icon={item.logo}
               name={item.name}
               description={item.description}

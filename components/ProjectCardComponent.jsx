@@ -5,7 +5,7 @@ export const ProjectCardComponent = ({
 }) => (
   <div className="ProjectCardContainer">
     <img alt={name} loading="lazy" src={icon} width="40px" height="40px" />
-    <label>{name}</label>
+    <label htmlFor="first-name">{name}</label>
     <p className="Description">{description}</p>
     <div className="Filters">
       <p className="Filter">{filter}</p>
@@ -19,7 +19,7 @@ export const ProjectCardComponent = ({
         } else {
           iconLink = '/link.png';
         }
-        return <a key={index} target="_blank" rel="noreferrer" href={item.link}><img alt="Link" height="20px" width="20px" src={iconLink} /></a>;
+        return <a target="_blank" rel="noreferrer" href={item.link}><img alt="Link" height="20px" width="20px" src={iconLink} /></a>;
       })}
     </div>
   </div>

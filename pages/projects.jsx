@@ -41,7 +41,15 @@ export default function ProjectsComponent() {
 
           <div className="ProjectsContainer">
             {projects ? projects.map((item) => (
-              (<ProjectPreviewComponent image={item.previewImage} name={item.name} createdAt={item.createdAt} preview={item.typeText} onClickCallback={onProjectClicked} />)
+              (
+                <ProjectPreviewComponent
+                  image={item.previewImage}
+                  name={item.name}
+                  createdAt={item.createdAt}
+                  preview={item.typeText}
+                  onClickCallback={onProjectClicked}
+                />
+              )
             )) : null}
           </div>
         </div>

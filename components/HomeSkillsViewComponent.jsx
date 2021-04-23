@@ -14,21 +14,36 @@ export default function HomeSkillsViewComponent() {
         <div className="SkillsContent">
           <div className="Item">
             <h4>Android Development</h4>
-            <p>Build Android Apps With Java, Kotlin, Gradle DSL, Dependency Injection, Material Design, Jetpack Component, RxJava, Kotlin Coroutines</p>
+            <p>
+              Build Android Apps With Java, Kotlin, Gradle DSL, Dependency Injection,
+              Material Design, Jetpack Component, RxJava, Kotlin Coroutines
+            </p>
           </div>
           <div className="Item">
             <h4>Web Development</h4>
-            <p>Design Websites With React.js, React Hooks, Axios, SASS, Eslint, Next.js For SSR, SPA, PWA, JSX, Typescript, Javascript (ES6+), Mobile Responsive, Static Site Generation (Next.js)</p>
+            <p>
+              Design Websites With React.js, React Hooks, Axios, SASS, Eslint,
+              Next.js For SSR, SPA, PWA, JSX, Typescript, Javascript (ES6+),
+              Mobile Responsive, Static Site Generation (Next.js)
+            </p>
           </div>
           <div className="Item">
             <hr />
             <h4>Backend Development</h4>
-            <p>Build Restful Api With Java, Javascript, PHP Using (SpringBoot (Java, Kotlin), Nest.js, Laravel) Based on Json Response, Auth, Mysql, NoSql</p>
+            <p>
+              Build Restful Api With Java, Javascript, PHP Using
+              (SpringBoot (Java, Kotlin), Nest.js, Laravel) Based
+              on Json Response, Auth, Mysql, NoSql
+            </p>
           </div>
           <div className="Item">
             <hr />
             <h4>Tools Development</h4>
-            <p>Build Gradle Plugins For Android, IDE Plugins, CLI's To Execute Environment Jobs Depends on OS With (Kotlin, Ruby, Groovy)</p>
+            <p>
+              Build Gradle Plugins For Android, IDE
+              Plugins, CLI&apos;s To Execute Environment Jobs Depends on
+              OS With (Kotlin, Ruby, Groovy)
+            </p>
           </div>
         </div>
       </section>

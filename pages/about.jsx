@@ -9,11 +9,21 @@ export default function About() {
       <div className="AboutContentContainer">
         <p className="Hint">Software Engineer</p>
         <h2>Yazan Tarifi</h2>
-        <p>A code-minded front-end software engineer focused on Design Full Applications From Backend to Frontend Via Some Platforms, Frameworks, Languages</p>
+        <p>
+          A code-minded front-end software engineer focused on Design Full Applications
+          From Backend to Frontend Via Some Platforms, Frameworks, Languages
+        </p>
 
         <div className="AboutContent">
           <h2>About Me</h2>
-          <p>I'm always want to Create a Creative Tools To Make My work Better, Create Opensource Projects, Based In Jordan, Create A backend for Project by design, Build a Restful Api Based on (SpringBoot, Nest.js, Ktor) and Create A Mobile Application Using Latest Technologies in Android Development also there is a good knowledge in Web Development With React.js, Over 3+ years of experience in Software Development</p>
+          <p>
+            I&apos;m always want to Create a Creative Tools To Make My work Better,
+            Create Opensource Projects, Based In Jordan, Create A backend for Project by design,
+            Build a Restful Api Based on (SpringBoot, Nest.js, Ktor) and Create
+            A Mobile Application Using Latest Technologies in Android Development
+            also there is a good knowledge in Web Development With React.js,
+            Over 3+ years of experience in Software Development
+          </p>
         </div>
 
         <div className="Links">

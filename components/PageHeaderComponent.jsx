@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import ComponentLayout from './layouts/ComponentLayout';
 import { getProfileInfo } from '../info/ProfileInformation';
 
@@ -43,7 +42,7 @@ export default function PageHeaderComponent() {
           </div>
         </div>
         <div className="Image">
-          <img loading="lazy" src="/header.png" alt="Header Image" width="711.2px" height="468.3px" />
+          <img loading="lazy" src="/header.png" alt="Header" width="711.2px" height="468.3px" />
         </div>
       </div>
     </ComponentLayout>
