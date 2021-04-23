@@ -8,6 +8,7 @@ export default function ProjectsComponent() {
   const [filter, setFilter] = React.useState('all');
   const [projects, setProjects] = React.useState([]);
   const router = useRouter();
+
   React.useEffect(() => {
     if (filter === 'all') {
       setProjects(getProjectsList());
@@ -18,9 +19,9 @@ export default function ProjectsComponent() {
 
   const onProjectClicked = (name) => {
     if (name === 'All Projects') {
-      router.push('/projects/all');
+      router.push('/projects/all').catch((error) => console.error(error));
     } else {
-      router.push(`/project?name=${name}`);
+      router.push(`/project?name=${name}`).catch((error) => console.error(error));
     }
   };
 
