@@ -9,12 +9,14 @@ export default function ProjectPreviewComponent({
       <div className="ProjectPreviewComponent">
         <div className="Content">
           <img src={image} alt={name} loading="lazy" />
-          <p className="Date">
-            Created At :
-            {createdAt}
-          </p>
-          <h3>{name}</h3>
-          <p>{preview}</p>
+          <div className="Texts">
+            <p className="Date">
+              Created At :
+              {createdAt}
+            </p>
+            <h3>{name}</h3>
+            <p>{preview}</p>
+          </div>
         </div>
       </div>
     </ComponentLayout>

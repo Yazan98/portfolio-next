@@ -15,8 +15,18 @@
       justify-items: center;
       align-items: center;
       padding: 5%;
-      transition: .5s;
       text-align: start;
+      overflow: hidden;
+
+      .Texts {
+        z-index: 1000;
+      }
+
+      .Content {
+        overflow: hidden;
+        border: 0 solid red;
+        border-radius: 5px;
+      }
 
       img {
         border: 0 solid red;
@@ -24,7 +34,13 @@
         cursor: pointer;
         width: 28vw;
         object-fit: cover;
-        transition: .4s;
+        transition: transform .5s ease;
+        overflow: hidden;
+        transform: scale(1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
       }
 
       .Date {
