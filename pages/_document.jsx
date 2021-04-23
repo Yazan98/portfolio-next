@@ -14,6 +14,10 @@ class PortfolioDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" />
+          <meta name="description" content="Personal Website Created to Show My Projects" />
+          <meta name="keywords" content="portfolio, personal website, developer, mobile developer, frontend developer" />
+          <meta name="author" content="Yazan98" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <body>
           <Main />

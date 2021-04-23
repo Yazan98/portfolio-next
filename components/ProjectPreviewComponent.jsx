@@ -5,14 +5,14 @@ export default function ProjectPreviewComponent({
   image = '', name = '', preview = '', createdAt = '', onClickCallback,
 }) {
   const imageRef = React.useRef(null);
-  const callback = React.useCallback((name = '') => {
-    onClickCallback(name);
+  const callback = React.useCallback((targetName = '') => {
+    onClickCallback(targetName);
   }, [imageRef]);
   return (
     <ComponentLayout>
       <div className="ProjectPreviewComponent">
         <div className="Content">
-          <img src={image} ref={imageRef} alt={name} loading="lazy" onClick={() => callback(name)} />
+          <img src={image} ref={imageRef} width="28vw" height="auto" alt={name} loading="lazy" onClick={() => callback(name)} />
           <div className="Texts">
             <p className="Date">
               Created At :
