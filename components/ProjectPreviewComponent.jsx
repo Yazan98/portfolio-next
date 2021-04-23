@@ -2,13 +2,17 @@ import React from 'react';
 import ComponentLayout from './layouts/ComponentLayout';
 
 export default function ProjectPreviewComponent({
-  image = '', name = '', preview = '', createdAt = '',
+  image = '', name = '', preview = '', createdAt = '', onClickCallback,
 }) {
+  const imageRef = React.useRef(null);
+  const callback = React.useCallback((name = '') => {
+    onClickCallback(name);
+  }, [imageRef]);
   return (
     <ComponentLayout>
       <div className="ProjectPreviewComponent">
         <div className="Content">
-          <img src={image} alt={name} loading="lazy" />
+          <img src={image} ref={imageRef} alt={name} loading="lazy" onClick={() => callback(name)} />
           <div className="Texts">
             <p className="Date">
               Created At :

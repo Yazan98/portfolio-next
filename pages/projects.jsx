@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import PersonalPagesComponent from '../components/layouts/PersonalPagesComponent';
 import { getProjectsList, getProjectsListByFilter } from '../info/ProfileInformation';
 import ProjectPreviewComponent from '../components/ProjectPreviewComponent';
@@ -6,6 +7,7 @@ import ProjectPreviewComponent from '../components/ProjectPreviewComponent';
 export default function ProjectsComponent() {
   const [filter, setFilter] = React.useState('all');
   const [projects, setProjects] = React.useState([]);
+  const router = useRouter();
   React.useEffect(() => {
     if (filter === 'all') {
       setProjects(getProjectsList());
@@ -13,6 +15,15 @@ export default function ProjectsComponent() {
       setProjects(getProjectsListByFilter(filter));
     }
   }, [filter]);
+
+  const onProjectClicked = (name) => {
+    if (name === 'All Projects') {
+      router.push('/projects/all');
+    } else {
+      router.push(`/project?name=${name}`);
+    }
+  };
+
   return (
     <PersonalPagesComponent>
       <div className="ProjectsComponent">
@@ -29,7 +40,7 @@ export default function ProjectsComponent() {
 
           <div className="ProjectsContainer">
             {projects ? projects.map((item) => (
-              (<ProjectPreviewComponent image={item.previewImage} name={item.name} createdAt={item.createdAt} preview={item.typeText} />)
+              (<ProjectPreviewComponent image={item.previewImage} name={item.name} createdAt={item.createdAt} preview={item.typeText} onClickCallback={onProjectClicked} />)
             )) : null}
           </div>
         </div>
