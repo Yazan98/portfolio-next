@@ -6,17 +6,26 @@
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(28vw,.1fr));
-    grid-gap: 1em;
 
     .ProjectPreviewComponent {
       width: 100%;
       height: 100%;
-      display: flex;
       justify-items: center;
       align-items: center;
       padding: 5%;
       text-align: start;
+      display: inline-block;
       overflow: hidden;
+      position: relative;
+      border: 0 solid red;
+      border-radius: 5px;
+
+      .ImageContainer {
+        display: inline-block;
+        overflow: hidden;
+        border: 0 solid red;
+        border-radius: 5px;
+      }
 
       .Texts {
         z-index: 1000;
@@ -29,14 +38,17 @@
       }
 
       img {
-        border: 0 solid red;
         border-radius: 5px;
         cursor: pointer;
-        width: 28vw;
-        object-fit: cover;
-        transition: transform .5s ease;
-        overflow: hidden;
         transform: scale(1);
+        width: 23vw;
+        height: auto;
+        object-fit: cover;
+        transition: .4s;
+        vertical-align: middle;
+        border-style: none;
+        display: inline-block;
+        overflow: hidden;
       }
 
       img:hover {
