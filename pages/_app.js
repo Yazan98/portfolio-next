@@ -3,6 +3,7 @@ import '../styles/skills_view.css';
 import '../styles/footer_style.scss';
 import '../styles/projects.scss';
 import '../styles/about.scss';
+import '../styles/not_found.scss';
 import '../styles/all_projects.scss';
 import '../styles/tools.scss';
 import React from 'react';

@@ -1,0 +1,15 @@
+@import "base";
+
+.NotFoundContainer {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center center;
+
+  .Content {
+    h1 {
+      font-size: 200px;
+    }
+  }
+}

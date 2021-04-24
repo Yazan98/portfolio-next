@@ -34,7 +34,14 @@ export default function AllProjectsComponent() {
           <div />
           <div />
           <form className="SearchFields" noValidate autoComplete="off">
-            <TextField id="standard-basic" value={search} onChange={(e) => setSearch(e.target.value)} label="Search By Name" />
+            <TextField
+              style={{ color: 'white' }}
+              color="secondary"
+              id="standard-basic"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              label="Search By Name"
+            />
           </form>
 
           <form className="SearchFields" noValidate autoComplete="off">
