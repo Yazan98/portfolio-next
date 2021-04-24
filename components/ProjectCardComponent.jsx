@@ -24,3 +24,5 @@ export const ProjectCardComponent = ({
     </div>
   </div>
 );
+
+export const ProjectCardViewComponent = React.memo(ProjectCardComponent);

@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import { PersonalPagesViewComponent } from '../../components/layouts/PersonalPagesComponent';
 import { findProjectByFilterType, findProjectByName, findProjectByFilterTypeAndLanguage } from '../../info/ProjectsList';
-import { ProjectCardComponent } from '../../components/ProjectCardComponent';
+import { ProjectCardViewComponent } from '../../components/ProjectCardComponent';
 
 export default function AllProjectsComponent() {
   const [search, setSearch] = useState('');
@@ -67,7 +67,7 @@ export default function AllProjectsComponent() {
         </div>
         <div className="ProjectsContainer">
           {projects.map((item) => (
-            <ProjectCardComponent
+            <ProjectCardViewComponent
               icon={item.logo}
               name={item.name}
               description={item.description}
