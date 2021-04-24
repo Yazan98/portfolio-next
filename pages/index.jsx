@@ -3,6 +3,8 @@ import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesC
 import { PageHeaderViewComponent } from '../components/PageHeaderComponent';
 import { HomeSkillsViewComponentView } from '../components/HomeSkillsViewComponent';
 import { HomeToolsComponent } from '../components/HomeUsedToolsComponent';
+import { ExperienceViewComponent } from '../components/ExperienceComponent';
+import { EducationViewComponent } from '../components/EducationComponent';
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <PageHeaderViewComponent />
       <HomeSkillsViewComponentView />
       <HomeToolsComponent />
+      <ExperienceViewComponent />
+      <EducationViewComponent />
     </PersonalPagesViewComponent>
   );
 }

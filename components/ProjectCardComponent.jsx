@@ -4,7 +4,7 @@ export const ProjectCardComponent = ({
   icon, name, description, filter, icons = [], isOpenSource,
 }) => (
   <div className="ProjectCardContainer">
-    <img alt={name} loading="lazy" src={icon} width="40px" height="40px" />
+    <img alt={name} loading="eager" src={icon} width="40px" height="40px" />
     <label htmlFor="first-name">{name}</label>
     <p className="Description">{description}</p>
     <div className="Filters">

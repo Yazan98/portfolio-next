@@ -19,6 +19,9 @@ class PortfolioDocument extends Document {
           <meta name="keywords" content="portfolio, personal website, developer, mobile developer, frontend developer" />
           <meta name="author" content="Yazan98" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <meta property="og:type" content="website" />
+          <meta name="google-site-verification" content="sjhqZiHtHmbZA-n6PrKgrUHdEluHo4BTHx3lX9pNvT0" />
         </Head>
         <body>
           <Main />

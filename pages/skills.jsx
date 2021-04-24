@@ -1,70 +1,106 @@
 import React from 'react';
 import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesComponent';
 
-function getDefaultToolItemComponent(image, name, usage, description) {
-  return (
-    <div className="ToolsComponent">
-      <div className="Content">
-        <div className="Intro">
-          <img src={image} alt={name} loading="lazy" />
-          <h3>{name}</h3>
-        </div>
-        <div className="Usage">
-          <h3>{usage}</h3>
-          <p>{description}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function getDefaultToolItemComponentRtl(image, name, usage, description) {
-  return (
-    <div className="ToolsComponent">
-      <div className="Content">
-        <div className="Usage">
-          <h3>{usage}</h3>
-          <p>{description}</p>
-        </div>
-        <div className="Intro">
-          <img src={image} alt={name} loading="lazy" />
-          <h3>{name}</h3>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function SkillsComponent() {
   return (
     <PersonalPagesViewComponent>
       <div className="SkillsContainer">
-        <div className="AboutContentContainer">
+        <div className="SkillsPageContainer">
           <h2>Skills</h2>
           <p>
             This Page Include All Languages, Frameworks I Use Daily And What i Build In This Tools
             To Create Projects Most Of Them is Just For Fun So
             This Page Will Show The Steps, Tools To Build Projects I work on
           </p>
-        </div>
 
-        <div className="Tools">
-          {getDefaultToolItemComponent(
-            '/kotlin.webp',
-            'Kotlin Language',
-            'Kotlin Usage',
-            'Kotlin Programming Language is My Favourite Language and Most Used in My Day Because'
-              + ' My Primary Job is Android Developer so Im Using Kotlin Everyday in my Life To Built Tools And The '
-              + 'Cool Thing About This Language is You Have KMPs Which is Kotlin Multi Platform Projects Also I can Build'
-              + ' Projects On Any Device That Support JVM Like Libraries, Apps, API',
-          )}
+          <div className="Components">
+            <div className="Item">
+              <div className="Content">
+                <img alt="Kotlin" src="/kotlin.webp" loading="eager" width="50px" height="50px" />
+                <h3>Kotlin Language</h3>
+              </div>
 
-          {getDefaultToolItemComponentRtl(
-            '/js.webp',
-            'Javascript Language',
-            'Javascript Usage',
-            'Im Using Javascript With React.js, Next.js To Build Single Page Apps With Jsx Syntax',
-          )}
+              <div className="Description">
+                <p>
+                  Build Kotlin Projects With Android Studio To Build Android Apps, Libraries
+                  or Kotlin Multi Platform and Gradle Plugins With Kotlin Also
+                  This is My Favourite Language Because as a Android
+                  Developer This is The Main Language im Working On
+                </p>
+              </div>
+
+              <div className="Tags">
+                <p>Android</p>
+                <p>Ktor Framework</p>
+                <p>Spring Boot</p>
+                <p>Gradle Plugins</p>
+              </div>
+            </div>
+            <div className="Item">
+              <div className="Content">
+                <img alt="Kotlin" src="/js.webp" loading="eager" width="50px" height="50px" />
+                <h3>Javascript Language</h3>
+              </div>
+
+              <div className="Description">
+                <p>
+                  JavaScript Used To Create Websites Built on React.js, Next.js Also Most Of Javascript Files
+                  Written With Jsx (ECMA +6) And The Backend Side With Express.js To Build Restful Api
+                </p>
+              </div>
+
+              <div className="Tags">
+                <p>Android</p>
+                <p>Ktor Framework</p>
+                <p>Spring Boot</p>
+                <p>Gradle Plugins</p>
+              </div>
+            </div>
+            <div className="Item">
+              <div className="Content">
+                <img alt="Kotlin" src="/kotlin.webp" loading="eager" width="50px" height="50px" />
+                <h3>Kotlin Language</h3>
+              </div>
+
+              <div className="Description">
+                <p>
+                  Build Kotlin Projects With Android Studio To Build Android Apps, Libraries
+                  or Kotlin Multi Platform and Gradle Plugins With Kotlin Also
+                  This is My Favourite Language Because as a Android
+                  Developer This is The Main Language im Working On
+                </p>
+              </div>
+
+              <div className="Tags">
+                <p>Android</p>
+                <p>Ktor Framework</p>
+                <p>Spring Boot</p>
+                <p>Gradle Plugins</p>
+              </div>
+            </div>
+            <div className="Item">
+              <div className="Content">
+                <img alt="Kotlin" src="/kotlin.webp" loading="eager" width="50px" height="50px" />
+                <h3>Kotlin Language</h3>
+              </div>
+
+              <div className="Description">
+                <p>
+                  Build Kotlin Projects With Android Studio To Build Android Apps, Libraries
+                  or Kotlin Multi Platform and Gradle Plugins With Kotlin Also
+                  This is My Favourite Language Because as a Android
+                  Developer This is The Main Language im Working On
+                </p>
+              </div>
+
+              <div className="Tags">
+                <p>Android</p>
+                <p>Ktor Framework</p>
+                <p>Spring Boot</p>
+                <p>Gradle Plugins</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </PersonalPagesViewComponent>

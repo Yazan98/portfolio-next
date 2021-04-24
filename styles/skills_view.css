@@ -35,6 +35,14 @@
     grid-column-gap: 2em;
 }
 
+
+.SkillsContentExps {
+    display: block;
+    overflow: hidden;
+    list-style: none;
+}
+
+
 .HomeSkillsViewComponent h4 {
     font-size: 18px;
     line-height: 1.55;
@@ -59,6 +67,14 @@
     border-top: 1px solid #9ca3ad;
 }
 
+.SkillsContentExps .Item hr {
+    margin-bottom: 20px;
+    border: 0;
+    margin-top: 2em;
+    border-top: 1px solid #9ca3ad;
+    width: 70%
+}
+
 .HomeSkillsViewComponent .Title {
     display: flex;
     justify-content: center;
@@ -77,4 +93,15 @@
 .HomeSkillsViewComponent .SkillsContent {
     flex: 0.7;
     padding-left: 4em;
+}
+
+.HomeSkillsViewComponent .SkillsContentExps {
+    flex: 0.7;
+    padding-left: 4em;
+}
+
+.HomeSkillsViewComponent .SkillsContentExps .Item .ItemDes {
+    margin-top: 1em;
+    max-width: 60%;
+    font-style: italic;
 }

@@ -6,6 +6,7 @@ import '../styles/about.scss';
 import '../styles/not_found.scss';
 import '../styles/all_projects.scss';
 import '../styles/tools.scss';
+import '../styles/skills_page.scss';
 import React from 'react';
 import ThemeContext, { getSavedTheme } from '../info/ThemeState';
 

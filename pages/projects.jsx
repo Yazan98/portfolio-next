@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { useRouter } from 'next/router';
+import { CSSTransition } from 'react-transition-group';
 import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesComponent';
 import { getProjectsList, getProjectsListByFilter } from '../info/ProfileInformation';
 import { ProjectPreviewViewComponent } from '../components/ProjectPreviewComponent';
@@ -39,19 +40,21 @@ export default function ProjectsComponent() {
             <label className={filter === 'opensource' ? 'active' : ''} onClick={() => setFilter('opensource')}>Filtered Projects</label>
           </div>
 
-          <div className="ProjectsContainer">
-            {projects ? projects.map((item) => (
-              (
-                <ProjectPreviewViewComponent
-                  image={item.previewImage}
-                  name={item.name}
-                  createdAt={item.createdAt}
-                  preview={item.typeText}
-                  onClickCallback={onProjectClicked}
-                />
-              )
-            )) : null}
-          </div>
+          <CSSTransition in timeout={250} classNames="fade">
+            <div className="ProjectsContainer">
+              {projects ? projects.map((item) => (
+                (
+                  <ProjectPreviewViewComponent
+                    image={item.previewImage}
+                    name={item.name}
+                    createdAt={item.createdAt}
+                    preview={item.typeText}
+                    onClickCallback={onProjectClicked}
+                  />
+                )
+              )) : null}
+            </div>
+          </CSSTransition>
         </div>
       </div>
     </PersonalPagesViewComponent>
