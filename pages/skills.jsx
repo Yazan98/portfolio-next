@@ -11,7 +11,7 @@ export default function SkillsComponent() {
             Languages, Frameworks Im Working on
           </p>
 
-          <div className="Components">
+          <ul className="Components">
             <div className="Item">
               <div className="Content">
                 <img alt="Kotlin" src="/kotlin.webp" loading="eager" width="50px" height="50px" />
@@ -317,7 +317,48 @@ export default function SkillsComponent() {
                 <p>InnoDB</p>
               </div>
             </div>
-          </div>
+
+            <div className="Item">
+              <div className="Content">
+                <img alt="Kotlin" src="/jenkins.webp" loading="eager" width="50px" height="50px" />
+                <h3>Jenkins CI</h3>
+              </div>
+
+              <div className="Description">
+                <p>
+                  Continues Integration For Android To Run Jobs On Specific Branches With Gradle
+                  Configuration and Create Pipelines, Jobs, and Fastlane For Android And Execute
+                  Lanes With Ruby Syntax and Manage Gems In App
+                </p>
+              </div>
+
+              <div className="Tags">
+                <p>CI</p>
+                <p>Fastlane</p>
+              </div>
+            </div>
+
+            <div className="Item">
+              <div className="Content">
+                <img alt="Kotlin" src="/android.webp" loading="eager" width="50px" height="50px" />
+                <h3>Android</h3>
+              </div>
+
+              <div className="Description">
+                <p>
+                  Create Android Applications With Kotlin and Gradle DSL With Latest Android Technologies
+                  Like Hilt, Jetpack Compose, Esspresso, Single Activity Applications,
+                  Multi Modular Apps, Deal With Offline Caching
+                  Experience and Familiar With MVVM, MVI, MVP, MVC, VIPER, Firebase, RxJava
+                </p>
+              </div>
+
+              <div className="Tags">
+                <p>Optimized Apps</p>
+                <p>Android Apps</p>
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
     </PersonalPagesViewComponent>

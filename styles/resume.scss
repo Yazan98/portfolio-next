@@ -1,0 +1,35 @@
+@import "base";
+
+.ResumeContainer {
+  padding: 2em;
+
+  .HeaderContainer {
+    h2 {
+      margin: 0;
+      padding: 0;
+      color: $primaryColor;
+    }
+
+    p {
+      font-size: small;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .FlexLinks {
+    display: flex;
+    justify-content: space-between;
+
+    .Item {
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        margin-right: 1em;
+        fill: white;
+      }
+    }
+  }
+}
