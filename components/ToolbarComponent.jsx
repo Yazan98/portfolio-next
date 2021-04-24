@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import BlueLineComponent from './BlueLineComponent';
+import { BlueLineComponent } from './BlueLineComponent';
 
 export default function ToolbarComponent() {
   const router = useRouter();
@@ -20,3 +20,5 @@ export default function ToolbarComponent() {
     </div>
   );
 }
+
+export const ToolbarViewComponent = React.memo(ToolbarComponent);

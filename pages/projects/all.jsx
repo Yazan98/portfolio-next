@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
-import PersonalPagesComponent from '../../components/layouts/PersonalPagesComponent';
+import { PersonalPagesViewComponent } from '../../components/layouts/PersonalPagesComponent';
 import { findProjectByFilterType, findProjectByName, findProjectByFilterTypeAndLanguage } from '../../info/ProjectsList';
 import { ProjectCardComponent } from '../../components/ProjectCardComponent';
 
@@ -13,7 +13,7 @@ export default function AllProjectsComponent() {
   const [filterType, setFilterType] = useState('All');
   const [projects, setProjects] = useState([]);
   const [language, setLanguage] = useState('');
-  useEffect(() => {
+  useMemo(() => {
     if (search) {
       setProjects(findProjectByName(search, filterType));
     } else if (language) {
@@ -24,7 +24,7 @@ export default function AllProjectsComponent() {
   }, [search, filterType, language]);
 
   return (
-    <PersonalPagesComponent>
+    <PersonalPagesViewComponent>
       <div className="AllProjectsContainer">
         <div className="MainContent">
           <div className="Title">
@@ -78,6 +78,6 @@ export default function AllProjectsComponent() {
           ))}
         </div>
       </div>
-    </PersonalPagesComponent>
+    </PersonalPagesViewComponent>
   );
 }

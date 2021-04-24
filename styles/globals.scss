@@ -1,3 +1,5 @@
+@import "base";
+
 html,
 body {
   padding: 0;
@@ -58,7 +60,7 @@ section {
 }
 
 .Toolbar_Container .Content h3 {
-  color: rgb(41, 98, 255);
+  color: $primaryColor;
   font-family: 'Caveat', cursive;
   font-size: x-large;
   margin: 0;
@@ -74,11 +76,11 @@ section {
 }
 
 .active {
-  color: rgb(41, 98, 255);
+  color: $primaryColor;
 }
 
 a:hover {
-  color: rgb(41, 98, 255);
+  color: $primaryColor;
   transition-duration: 0.5s;
 }
 
@@ -113,7 +115,7 @@ a:hover {
 }
 
 .Description .Content  label {
-  color: rgb(41, 98, 255);
+  color: $primaryColor;
   font-size: xx-large;
 }
 
@@ -125,7 +127,7 @@ a:hover {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  background-color: rgb(41, 98, 255);
+  background-color: $primaryColor;
   margin-right: 5px;
   margin-top: 2px;
 }
@@ -170,7 +172,7 @@ span {
 }
 
 .ResumeButton:hover {
-  color: rgb(41, 98, 255);
+  color: $primaryColor;
 }
 
 .Technologies {
@@ -179,7 +181,7 @@ span {
 }
 
 .TechTitle {
-  color: rgb(41, 98, 255);
+  color: $primaryColor;
   margin-top: 1.5em;
 }
 

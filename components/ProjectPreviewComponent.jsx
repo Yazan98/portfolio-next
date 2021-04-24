@@ -28,3 +28,5 @@ export default function ProjectPreviewComponent({
     </ComponentLayout>
   );
 }
+
+export const ProjectPreviewViewComponent = React.memo(ProjectPreviewComponent);

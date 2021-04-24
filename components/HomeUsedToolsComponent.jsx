@@ -50,3 +50,5 @@ export default function HomeUsedToolsComponent() {
     </ComponentLayout>
   );
 }
+
+export const HomeToolsComponent = React.memo(HomeUsedToolsComponent);

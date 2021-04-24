@@ -1,3 +1,5 @@
+@import "base";
+
 .ProjectsComponent {
   padding: 2em;
   text-align: center;
@@ -73,7 +75,7 @@
       }
 
       label:hover {
-        color: rgb(41, 98, 255);
+        color: $primaryColor;
         transition-duration: 1s;
       }
     }

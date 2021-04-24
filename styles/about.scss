@@ -1,9 +1,10 @@
+@import "base";
 
 .AboutContentContainer {
   padding: 2em;
 
   h2 {
-    color: rgb(41, 98, 255);
+    color: $primaryColor;
     font-size: x-large;
     padding: 0;
     margin: 0;
@@ -43,23 +44,5 @@
       }
     }
 
-    .site-btn {
-      font-size: 12px;
-      line-height: 1.66;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-family: "Lato", sans-serif;
-      background: #3333ff;
-      color: #fff;
-      -webkit-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-      min-width: 170px;
-      text-align: center;
-      padding: 15px;
-      display: inline-block;
-      border: none;
-      border-radius: 2px;
-    }
   }
 }

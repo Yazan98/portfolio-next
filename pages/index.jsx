@@ -1,15 +1,15 @@
 import React from 'react';
-import PersonalPagesComponent from '../components/layouts/PersonalPagesComponent';
-import PageHeaderComponent from '../components/PageHeaderComponent';
-import HomeSkillsViewComponent from '../components/HomeSkillsViewComponent';
-import HomeUsedToolsComponent from '../components/HomeUsedToolsComponent';
+import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesComponent';
+import { PageHeaderViewComponent } from '../components/PageHeaderComponent';
+import { HomeSkillsViewComponentView } from '../components/HomeSkillsViewComponent';
+import { HomeToolsComponent } from '../components/HomeUsedToolsComponent';
 
 export default function Home() {
   return (
-    <PersonalPagesComponent>
-      <PageHeaderComponent />
-      <HomeSkillsViewComponent />
-      <HomeUsedToolsComponent />
-    </PersonalPagesComponent>
+    <PersonalPagesViewComponent>
+      <PageHeaderViewComponent />
+      <HomeSkillsViewComponentView />
+      <HomeToolsComponent />
+    </PersonalPagesViewComponent>
   );
 }

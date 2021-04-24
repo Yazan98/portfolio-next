@@ -12,7 +12,7 @@ export const ProjectCardComponent = ({
       <p className="Filter">{isOpenSource ? 'Open Source' : 'Closed Source'}</p>
     </div>
     <div className="Links">
-      {icons.map((item, index) => {
+      {icons.map((item) => {
         let iconLink;
         if (item.type === 'Github') {
           iconLink = '/github.png';

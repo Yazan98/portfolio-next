@@ -1,11 +1,11 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
-import PersonalPagesComponent from '../components/layouts/PersonalPagesComponent';
+import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesComponent';
 
 export default function About() {
   return (
-    <PersonalPagesComponent>
+    <PersonalPagesViewComponent>
       <div className="AboutContentContainer">
         <p className="Hint">Software Engineer</p>
         <h2>Yazan Tarifi</h2>
@@ -46,6 +46,6 @@ export default function About() {
           </form>
         </section>
       </div>
-    </PersonalPagesComponent>
+    </PersonalPagesViewComponent>
   );
 }

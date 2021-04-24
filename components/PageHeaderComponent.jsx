@@ -48,3 +48,5 @@ export default function PageHeaderComponent() {
     </ComponentLayout>
   );
 }
+
+export const PageHeaderViewComponent = React.memo(PageHeaderComponent);

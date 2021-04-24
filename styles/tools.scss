@@ -1,0 +1,42 @@
+@import "base";
+
+.SkillsContainer {
+  .Tools {
+    padding: 2em;
+
+    .ToolsComponent {
+      display: flex;
+      margin-top: 2em;
+      padding: 2em;
+      place-items: center center;
+      justify-content: center;
+
+     .Content {
+       display: flex;
+       place-items: center center;
+       justify-content: center;
+       width: 60vw;
+
+       .Usage {
+         margin-left: 2em;
+         flex: 1;
+         margin-top: 5em;
+         margin-right: 1em;
+       }
+
+       .Intro {
+         display: block;
+
+         img {
+           width: 5vw;
+           flex: 1;
+         }
+
+         h3 {
+           color: $primaryColor;
+         }
+       }
+     }
+    }
+  }
+}

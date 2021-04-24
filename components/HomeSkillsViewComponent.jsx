@@ -50,3 +50,5 @@ export default function HomeSkillsViewComponent() {
     </ComponentLayout>
   );
 }
+
+export const HomeSkillsViewComponentView = React.memo(HomeSkillsViewComponent);
