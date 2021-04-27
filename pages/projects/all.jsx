@@ -24,7 +24,7 @@ export default function AllProjectsComponent() {
   }, [search, filterType, language]);
 
   return (
-    <PersonalPagesViewComponent>
+    <PersonalPagesViewComponent title="Yazan Tarifi - All Projects">
       <div className="AllProjectsContainer">
         <div className="MainContent">
           <div className="Title">

@@ -3,7 +3,7 @@ import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesC
 
 export default function SkillsComponent() {
   return (
-    <PersonalPagesViewComponent>
+    <PersonalPagesViewComponent title="Yazan Tarifi - Portfolio - Skills">
       <div className="SkillsContainer">
         <div className="SkillsPageContainer">
           <h2>Skills</h2>

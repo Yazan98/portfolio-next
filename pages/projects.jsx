@@ -27,7 +27,7 @@ export default function ProjectsComponent() {
   }, [filter]);
 
   return (
-    <PersonalPagesViewComponent>
+    <PersonalPagesViewComponent title="Yazan Tarifi - Projects">
       <div className="ProjectsComponent">
         <div className="Title">
           <h2>Portfolio</h2>

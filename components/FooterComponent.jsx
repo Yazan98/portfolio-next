@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentLayout from './layouts/ComponentLayout';
 import { BlueLineComponent } from './BlueLineComponent';
+import ComponentLayout from './layouts/ComponentLayout';
 
 export const FooterComponent = React.memo(() => (
   <ComponentLayout>

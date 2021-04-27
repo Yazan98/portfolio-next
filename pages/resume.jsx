@@ -3,7 +3,7 @@ import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesC
 
 export default function ResumeComponent() {
   return (
-    <PersonalPagesViewComponent>
+    <PersonalPagesViewComponent title="Yazan Tarifi - Resume">
       <div className="ResumeContainer">
         <div className="HeaderContainer">
           <p>Software Engineer</p>

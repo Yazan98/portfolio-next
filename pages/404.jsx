@@ -3,7 +3,7 @@ import { PersonalPagesViewComponent } from '../components/layouts/PersonalPagesC
 
 export default function NotFoundPageComponent() {
   return (
-    <PersonalPagesViewComponent>
+    <PersonalPagesViewComponent title="Yazan Tarifi - Content Not Found">
       <div className="NotFoundContainer">
         <div className="Content">
           <h1>404</h1>
