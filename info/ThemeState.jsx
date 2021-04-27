@@ -18,4 +18,11 @@ export function setNewTheme(newTheme = LIGHT_THEME) {
   Cookies.set('theme', newTheme);
 }
 
+export function getDarkModePrefixClassName(currentTheme) {
+  if (currentTheme === LIGHT_THEME) {
+    return '';
+  }
+  return ` ${DARK_THEME}`;
+}
+
 export default ThemeContext;

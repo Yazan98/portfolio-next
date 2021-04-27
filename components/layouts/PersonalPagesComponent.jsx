@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import PortfolioContainer from './PortfolioContainer';
 import { FooterComponent } from '../FooterComponent';
-import { ToolbarViewComponent } from '../ToolbarComponent';
 
 export default function PersonalPagesComponent({ children, title }) {
   return (
@@ -11,7 +10,6 @@ export default function PersonalPagesComponent({ children, title }) {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ToolbarViewComponent />
       {children}
       <FooterComponent />
     </PortfolioContainer>

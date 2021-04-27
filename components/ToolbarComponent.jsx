@@ -14,6 +14,7 @@ export default function ToolbarComponent() {
           <a href="/projects" className={router.pathname === '/projects' ? 'active' : 'Link'}>Projects</a>
           <a href="/skills" className={router.pathname === '/skills' ? 'active' : 'Link'}>Skills</a>
           <a href="/archive" className={router.pathname === '/archive' ? 'active' : 'Link'}>Archive</a>
+          <a href="/resume" id="rounded" className={router.pathname === '/resume' ? 'active' : 'Link'}>Resume</a>
         </div>
       </div>
     </div>
